@@ -1,0 +1,22 @@
+<li class="post-item">
+    <div class="meta">
+        <%- partial('post/date', {post: post, class_name: '' }) %>
+        <div>
+            <i class="fa fa-user"></i>
+            <em>@<% if (post.author) { %><%- post.author %><% } else { %><%- config.author %><% } %></em>
+        </div>
+    </div>
+    <div>
+        <div><%- partial('post/title', { post: post, index: true, class_name: '' }) %></div>
+        <% if (post.excerpt) { %>
+            <div><%- post.excerpt %></div>
+        <% } %>
+        <% if (post.tags && post.tags.length) { %>
+            <div>
+                <i class="fas fa-tags"></i>
+                #<%- list_tags(post.tags, { show_count: false, style: 'link', separator: ",&nbsp;#" }) %>
+            </div>
+        <% } %>
+        <hr />
+    </div>
+</li>

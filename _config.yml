@@ -118,6 +118,15 @@ colorscheme: dark
 page_width: 48
 
 
+# Added by @sandyzikun(https://github.com/sandyzikun/)
+# Change all colors into base16 themes.
+base16:
+  enabled: false
+  theme: solarized
+  scheme:
+    color: default
+    highlight: atelier-light
+
 ##############################################################################
 # Miscellaneous
 ##############################################################################
@@ -140,7 +149,24 @@ open_graph:
 # Enable MathJax support for Latex
 mathjax:
   enabled: false
-  
+
+# Fill in your Valine data to enable Valine comments.
+valine:
+  enabled: false
+  app_id:
+  app_Key:
+  placeholder: "Just tell and share your feelings..."
+
+# Fill in your Gitalk data to enable Gitalk comments.
+gitalk:
+  enabled: false
+  owner: # GitHub repo owner
+  repo:  # GitHub repo, The repository of store comments
+  admin: # GitHub repo owner and collaborators, only these guys can initialize github issues
+  client_ID: "39c5bb39c5bb39c5bb39" # GitHub Application Client ID
+  client_secret: "c5bb39c5bb39c5bb39c5bb39c5bb39c5bb39c5bb" # GitHub Application Client Secret
+  distraction_free_mode: false # Facebook-like distraction free mode
+
 # Fill in your Disqus Comments Shortname to enable Disqus comments.
 disqus:
   enabled: false

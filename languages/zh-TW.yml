@@ -59,3 +59,7 @@ counter:
 
 comments:
   no_js: 請開啟 JavaScript 功能來使用留言系統
+
+tooltip:
+  copy_tip: 複製到粘貼板!
+  copied: 複製成功!

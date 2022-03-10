@@ -1,5 +1,9 @@
 @import "_variables"
 @import "_colors/" + $colors
+// Code
+@import "_highlight/" + $highlight
+if hexo-config("base16") && hexo-config("base16.enabled")
+  @import "_base16extensions/init"
 @import "_util"
 @import "_mixins"
 @import "_extend"
@@ -123,8 +127,6 @@ body
 @import "_partial/tags"
 @import "_partial/tooltip"
 @import "_partial/categories"
-// Code
-@import "_highlight/" + $highlight
 
 pre
   overflow-x: auto
@@ -209,3 +211,5 @@ code
 
   .line
     height: 22px
+
+@import "_extensions/init"

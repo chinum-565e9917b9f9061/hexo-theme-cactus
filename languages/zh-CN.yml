@@ -35,8 +35,27 @@ search:
   search: 搜索...
   no_results: 抱歉，没有符合您搜索条件的结果。请换其它关键词再试。
 
+tag_cloud:
+  zero: 目前没有标签
+
 pagination:
   page: 第 %d 页，共 %d 页
+
+counter:
+  tag_cloud:
+    zero: 目前没有标签
+    one: ""
+    other: ""
+
+  categories:
+    zero: 目前没有分类
+    one: ""
+    other: ""
+
+  archive_posts:
+    zero: 目前没有文章
+    one: ""
+    other: ""
 
 comments:
   no_js: 加载评论需要在浏览器启用 JavaScript 脚本支持。

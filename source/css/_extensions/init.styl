@@ -1,0 +1,24 @@
+.post-list .post-item
+    if hexo-config("show_exact_time")
+        .meta
+            min-width: 164px
+    if hexo-config("show_post_details")
+        blockquote
+            margin: 1rem 10px
+            padding: .5em 10px
+            background: inherit
+            color: $color-quote
+            quotes: "\201C" "\201D" "\2018" "\2019"
+            font-weight: bold
+            p
+                margin: 0
+            &::before
+                margin-right: .25em
+                color: $color-quote
+                content: "\201C"
+                vertical-align: -.4em
+                font-size: 2em
+                line-height: .1em
+            footer cite
+                &::before
+                    content: " - "
